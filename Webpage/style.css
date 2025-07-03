@@ -13,7 +13,7 @@
 
 /* Base HTML and Body styles */
 html {
-    /* Set 1rem to 10px (if browser default is 16px). This is for consistent calculations. */
+    /* This setting means 1rem will be 10px on most browsers (16px * 0.625 = 10px) */
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -24,9 +24,8 @@ body {
     background-color: black;
     color: white;
     min-height: 100vh;
-    /* NEW: Set a readable default font size for the body.
-       Since 1rem = 10px from html, 1.6rem = 16px. */
-    font-size: 1.6rem; /* This will be your base font size for paragraphs etc. */
+    /* Base font size for general text. If 1rem is 10px, this is 14px. */
+    font-size: 1.4rem;
 }
 
 /* Header Styling */
@@ -35,7 +34,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%;
+    padding: 1.2rem 9%; /* Slightly reduced padding */
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     display: flex;
@@ -46,7 +45,7 @@ header {
 }
 
 .logo {
-    font-size: 3.2rem; /* 32px */
+    font-size: 3rem; /* 30px */
     color: #b74b4b;
     font-weight: 800;
     cursor: pointer;
@@ -58,9 +57,9 @@ header {
 }
 
 nav a {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.6rem; /* 16px - reduced for navigation */
     color: white;
-    margin-left: 4rem;
+    margin-left: 3.5rem; /* Slightly reduced margin */
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -86,7 +85,7 @@ nav a.active {
         width: 100%;
         background-color: rgba(22, 22, 22, 0.95);
         border-bottom: 3px solid #b74b4b;
-        padding: 2rem 0;
+        padding: 1.5rem 0; /* Adjusted padding for mobile nav */
         text-align: center;
         flex-direction: column;
     }
@@ -96,14 +95,14 @@ nav a.active {
     }
 
     nav a {
-        font-size: 2.2rem; /* 22px */
-        margin: 1.5rem 0;
+        font-size: 1.8rem; /* 18px for mobile nav links */
+        margin: 1rem 0; /* Adjusted margin for mobile nav */
         border-bottom: none;
     }
 
     nav a:hover,
     nav a.active {
-        padding: 1rem;
+        padding: 0.8rem;
         border-radius: 0.5rem;
         background-color: rgba(183, 75, 75, 0.2);
         border-bottom: 0.5rem solid #b74b4b;
@@ -141,14 +140,14 @@ section {
 }
 
 .home-content h1 {
-    font-size: 6rem; /* 60px */
+    font-size: 5.5rem; /* 55px */
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 2rem;
 }
 
 .home-content p {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.7rem; /* 17px - slightly reduced */
     line-height: 1.6;
     margin-bottom: 3rem;
 }
@@ -196,11 +195,10 @@ span {
 }
 
 .social-icons a {
-    font-size: 2.2rem; /* 22px */
-    width: 4.5rem;
-    height: 4.5rem;
+    font-size: 2rem; /* 20px */
+    width: 4.2rem; /* Slightly smaller icon circles */
+    height: 4.2rem;
     margin-right: 1.5rem;
-    /* ... rest of the styles are unchanged ... */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -220,10 +218,9 @@ span {
 
 /* Call to Action Button */
 .btn {
-    font-size: 1.7rem; /* 17px */
-    padding: 1.2rem 3rem;
+    font-size: 1.6rem; /* 16px */
+    padding: 1rem 2.8rem; /* Slightly reduced padding */
     margin-top: 3rem;
-    /* ... rest of the styles are unchanged ... */
     display: inline-block;
     background-color: black;
     border-radius: 4rem;
@@ -244,8 +241,8 @@ span {
 
 /* Section Title Styling */
 .title h1 {
-    font-size: 5.5rem; /* 55px */
-    margin-bottom: 5rem;
+    font-size: 5rem; /* 50px */
+    margin-bottom: 4rem; /* Reduced margin */
     position: relative;
     display: inline-block;
 }
@@ -264,7 +261,7 @@ span {
 
 /* About Section */
 .about p {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.7rem; /* 17px */
     line-height: 1.7;
     max-width: 800px;
 }
@@ -275,19 +272,18 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem; /* Slightly reduced gap */
     width: 100%;
     max-width: 1200px;
 }
 
 .box {
-    padding: 3rem 2.5rem;
-    font-size: 1.6rem; /* Ensures text inside boxes is readable */
-    /* ... rest of the styles are unchanged ... */
+    padding: 2.8rem 2.2rem; /* Slightly reduced padding */
+    font-size: 1.5rem; /* Base font for box text */
     background-color: #1a1a1a;
     border-radius: 1.5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    flex: 1 1 280px;
+    flex: 1 1 270px; /* Adjusted flex basis */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 200px;
@@ -303,33 +299,33 @@ span {
 }
 
 .box .topic {
-    font-size: 2.4rem; /* 24px */
+    font-size: 2.2rem; /* 22px */
     font-weight: 600;
     color: #b74b4b;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem; /* Reduced margin */
 }
 
 .box .per {
-    font-size: 2rem; /* 20px */
+    font-size: 1.8rem; /* 18px */
     font-weight: 500;
     color: white;
 }
 
 .box .icon {
-    font-size: 5rem; /* 50px */
+    font-size: 4.5rem; /* 45px */
     color: #b74b4b;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .box p {
-    font-size: 1.5rem; /* 15px (this is relative to the box's font-size if not directly on box) */
+    font-size: 1.4rem; /* 14px for box paragraphs */
     line-height: 1.7;
     color: #ccc;
 }
 
 /* Projects Section Styling (Placeholder) */
 .projects p {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.7rem; /* 17px */
     max-width: 800px;
 }
 
@@ -352,11 +348,11 @@ span {
     }
 
     .home-content h1 {
-        font-size: 4.5rem; /* 45px */
+        font-size: 4rem; /* 40px */
     }
 
     .home-content p {
-        font-size: 1.6rem; /* 16px */
+        font-size: 1.5rem; /* 15px */
     }
 
     .home-img {
@@ -382,12 +378,12 @@ span {
     }
 
     .title h1 {
-        font-size: 4rem; /* 40px */
-        margin-bottom: 4rem;
+        font-size: 3.5rem; /* 35px */
+        margin-bottom: 3rem;
     }
 
     .about p {
-        font-size: 1.6rem; /* 16px */
+        font-size: 1.5rem; /* 15px */
     }
 
     .box {
@@ -400,7 +396,7 @@ span {
 footer {
     text-align: center;
     padding: 2.5rem;
-    font-size: 1.5rem; /* 15px */
+    font-size: 1.4rem; /* 14px */
     color: #ccc;
     background-color: #161616;
     margin-top: 5rem;
