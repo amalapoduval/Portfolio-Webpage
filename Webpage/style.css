@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +7,13 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-
-
 body{
     width: 100%;
     height: auto;
     background-color: black;
     overflow-x: hidden;
 }
-
-/*Custom Scroll Bar CSS*/
+Custom Scroll Bar CSS
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -28,7 +25,6 @@ body{
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background:#b74b4b;
 }
@@ -36,9 +32,7 @@ body{
 nav{
     width: 100%;
     height: 10vh;
-
 }
-
 .nav-container {
     width:100%;
     height: 100%;
@@ -46,7 +40,6 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-
 .logo{
     color: white;
     font-size:2rem;
@@ -57,7 +50,6 @@ nav{
     color:#b74b4b;
     text-shadow: 0 0 10px #b74b4b 
 }
-
 .hamburg,
 .cancel{
     cursor: pointer;
@@ -69,11 +61,9 @@ nav{
     pointer-events: none;
     font-size: clamp (2.5rem, 0.5rem + 5vw, 3rem);
 }
-
 .nav-container.links{
     display: flex;
 }
-
 .nav-container.links a{
     position: relative;
     font-size: 1.2rem;
@@ -83,7 +73,6 @@ nav{
     font-weight: 550;
     transition: 0.3s linear;
 }
-
 .nav-container.links a::before{
     position: absolute;
     content: "";
@@ -94,15 +83,12 @@ nav{
     background-color: #b74b4b;
     transition: 0.2s linear;
 }
-
 .nav-container.links a:hover::before{
     width: 100%;
 }
-
 .nav-container.links a:hover{
     color:#b74b4b;
 }
-
 .dropdown {
     z-index: 100;
     position: absolute;
@@ -113,12 +99,10 @@ nav{
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
-
 /* Optional: Apply a backdrop effect — but you must use backdrop-filter */
 .dropdown::backdrop {
     backdrop-filter: blur(4px) brightness(40%);
 }
-
 .dropdown.link a{
     display: flex;
     color:white;
@@ -128,24 +112,19 @@ nav{
     align-items: center;
     transition: 0.2s linear;
 }
-
 .dropdown.links a:hover{
     background-color: #b74b4b;
 }
-
 section{
     width: 100%;
     min-height: 90vh;
 }
-
 section.main-container{
-
 display: flex;
 justify-content:space-between;
 padding-left: 100px;
 align-items: center;
 }
-
 .main-container .image{
     width: 500px;
     height: 80vh;
@@ -153,12 +132,10 @@ align-items: center;
     overflow: hidden;
     box-shadow: 0 0 50px #b74b4b;
 }
-
 .main-container .image img{
     width: 100%;
 }
-
-/*.main-container .image:hover{
+.main-container .image:hover{
     animation:animate 1.5s ease-in-out infinite;
 }
 
@@ -174,37 +151,30 @@ align-items: center;
     100%{
         scale: 1;
     }
-}*/
-
+}
 .main-container.content{
     color: white;
     width: 40%;
 }
-
 .content h1{
     font-size: clamp(1rem, 1rem + 5vw, 1,8rem);      
 }
-
 .content h1 span{
     color:#b74b4b;
     text-shadow: 0 0 10px #b74b4b;
 }
-
 .content.typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
 }
-
 .content.typewriter-text{
     color:#b74b4b;
     text-shadow: 0 0 10px #b74b4b;
 }
-
 .content p{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
-
 .social-links i{
     display: inline-flex;
     justify-content: center;
@@ -219,14 +189,12 @@ align-items: center;
     font-size: 1.5rem;
     transition: 0.2s linear;
 }
-
 .social-links i:hover{
     scale: 1.3;
     color: black;
     background-color: #b74b4b;
     filter: drop-shadow(0 0 10px #b74b4b);   
 }
-
 .content button{
     width: 50%;
     height: 6vh;
@@ -240,7 +208,6 @@ align-items: center;
     border-radius: 5px;
     transition: 0.2s linear;
 }
-
 .content button:hover{
     scale: 1.1;
     color:#b74b4b;
@@ -249,11 +216,7 @@ align-items: center;
     font-weight: 700;
     box-shadow: 0 0 40px #b74b4b;
 }
-
 /*About Section Styling*/
-
-
-
 section.content{
     width: 80%;
     margin: 0px auto;
@@ -334,7 +297,6 @@ section .button button:hover{
     background-color: #fff;
     color: #b74b4b;
 }
-
 .skills{
     background: black;
 }
@@ -433,7 +395,6 @@ section .button button:hover{
 .services .boxes .box:hover p{
     color: #fff;
 }
-
 footer{
     background: #b74b4b;
     padding: 15px 0;
@@ -464,8 +425,6 @@ footer .text span a:hover{
     box-shadow: rgba(0, 0, 0, 0.15);
     display: none;
 }
-
-
 @media (max-width: 1000px)
 .about .about-details{
     justify-content: center;
@@ -484,14 +443,12 @@ footer .text span a:hover{
     margin: 20px 0;
     width: calc(100%/2-20px);
 }
-
-
-/*@media (max-width: 900px) {
+@media (max-width: 900px) {
     .about .left img{
         height: 350px;
         width: 350px;
     }
-} */
+}
 
 @media (max-width: 968px) {
 
@@ -507,40 +464,33 @@ section .main-container{
     display: flex;
     flex-direction: column;
 }
-
 .nav-container.links{
     display: none;
 }
-
 .hamburg,
 .cancel{
     opacity: 1;
     pointer-events: visible;
 }
-
 .main-container.content{
     margin-top: 20px;
     width: 80%;
 }
-
 .social-links i{
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
 }
-
-/*.main-container .image{
+.main-container .image{
     z-index: -1;
     width: 50%;
     height: 60%;
 }
-
 .skills .skills-details{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-} */
-
+}
 .skills-details .text{
     width: 100%;
     margin-bottom: 50px;
@@ -554,26 +504,22 @@ section .main-container{
     margin: 20px 0;
     width: 100%;
 }
-/*.contact .text{
+.contact .text{
     width: 100%;
 }
-} */
-
+}
 @media (max-width: 500px){
     .main-container .image{
         width: 50%;
         height: 60%;
         margin-bottom: 0px;
     }
-
 .main-container.content{
     width: 80%;
 }
-
 .main-container button{
     margin-top: 15px;
 }
-
 .skills-details .boxes .per{
     font-size: 50px;
     color: #b74b4b;
