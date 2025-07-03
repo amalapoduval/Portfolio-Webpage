@@ -3,119 +3,171 @@
     
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Student</a>
 
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Projects</a>
-            <a href="#" >Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpeg" alt="">
+
+<nav>
+ <div class="nav-container">
+    <div class="logo">
+    <span>Amala</span>
+    </div>
+<div class="links">
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#">About</a></div>
+        <div class="link"><a href="#">Technologies</a></div>
+        <div class="link"><a href="#">Skills</a></div>
+        <div class="link"><a href="#">Projects</a></div>
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Amala</span></h1>
-            <p>I am facinated by the intersection of design and innovation, curious to understand how things are imagined, built and brought to life. I have a background in design and marketing, reliable and adaptable with experience in SEO, content planning and fast-paced work environment.</p>
-            <div class="social-icons">
-                <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Technologies</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
-            <a href="#" class="btn">My CV</a>
         </div>
-    </section>
+ </nav>
+    <section>
+        <div class="main-container">
+            </div>
+        <div class="content">
+            Hello! It's
+            <span>Amala</span>
+            </div>
+            <p>I am a computer science student based in Berlin. I am facinated by the intersection of design and innovation. Intruiged by how things are imagined, built and brought to life.</p>
+            <div class="social-links">
+                <a href="https://github.com/amalapoduval/Portfolio-Webpage" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+                <a href="https://www.linkedin.com/in/amala-poduval/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">MY CV</a>
+            </div>
+            </section>
+
+<!---About Section Start-->
+     <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+            <div class="right">
+            <img src="main.jpeg" alt=""/>
+            </div>
+            <div class="left">
+                <p>
+                I hold a degree in Design and am currently pursuing a degree in Computer Science. I’m organized, detail-oriented, and passionate about data, design, and innovation. I thrive in fast-paced environments.
+                </p>
+            </div>
+            </div>
+        </div>
+     </section>
+
 
 <!---My Skill Section Start-->
+<section class="skills" id="skills">
+    <div class="content">
+     <div class="title"><span>Technologies</span></div>
+<div class="skills-details">
+    <div class="text">
+    </div>
+<div class="boxes">
+    <div class="box">
+        <div class="topic">HTML</div>
+        <div class="per">70%</div>
+    </div>
+    <div class="box">
+      <div class="topic">CSS</div>
+      <div class="per">70%</div>
+    </div>
+    <div class="box">
+      <div class="topic">Python</div>
+      <div class="per">40%</div>   
+    </div>
+    <div class="box">
+      <div class="topic">Excel</div>
+      <div class="per">90%</div>
+    </div>
+    <div class="box">
+      <div class="topic">PowerPoint</div>
+      <div class="per">95%</div>
+    </div>
+    <div class="box">
+      <div class="topic">Adobe</div>
+      <div class="per">90%</div>
+    </div>
+  </div>  
+ </div>
+</div>
+</section>
+
+<!--My Services Section Start-->
 <section class="services" id="services">
     <div class="content">
-     <div class="title"><span>My Skills</span></div>
-<div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-desktop"></i>  
-    </div>
-           <div class="title">HTML</div>
-        <div class="per">70%</div>
-<div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-paint-brush"></i>  
-    </div>
-           <div class="title">CSS</div>
-        <div class="per">70%</div>
-<div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-android"></i>  
-    </div>
-           <div class="title">PYTHON</div>
-        <div class="per">40%</div>
-<div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-chart-line"></i>  
-    </div>
-           <div class="title">ADOBE CREATIVE SUITE</div>
-        <div class="per">90%</div>
-        </div>
-  <div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-android"></i>  
-    </div>
-           <div class="title">EXCEL</div>
-        <div class="per">90%</div>  
-    </div>
-    <div class="boxes">
-    <div class="box">
-       <div class="box">
-        <div class="icon">
-            <i class="fas fa-tablet-alt"></i>  
-    </div>
-           <div class="title">POWERPOINT</div>
-        <div class="per">95%</div>  
-    </div>
-</section>
- 
-<!--My Project Section Start-->
-<section class="Python Projects:" id="Projects">
-    <div class="content">
-        <div class="title"><span>Python Projects</span></div>
+        <div class="title"><span>My Skills</span></div>
         <div class="boxes">
             <div class="box">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
                     </div>
-                    <div class="topic">Project 1</div>
-            <a href="https://github.com/amalapoduval/Portfolio-Webpage/blob/main/Python%20Projects/Data%20Visualization%20with%20python-checkpoint.ipynb" target="_blank">
-                    <p>Data Visualization Project</p>
+                    <div class="topic">Front-end Development</div>
+                    <p>With my background in design and my cs skills, I can develop beautiful, functionable web and landing pages</p>
                 </div>
             <div class="box">
                  <div class="icon">
                     <i class="fas fa-paint-brush"></i>
-                </a>
         </div>
-  <div class="topic">Project 2</div>
-                <a href="https://github.com/amalapoduval/Portfolio-Webpage/blob/main/Python%20Projects/Project%201" target="_blank">
-        <p>Madlibs Game</p>
+        <div class="topic">Graphic Design</div>
+        <p>I specialize in branding, storytelling and UX design.</p>
+    </div>
+     <div class="box">
+        <div class="icon">
+            <i class="fas fa-chart-line"></i>
+        </div>
+  <div class="topic">Presentation Design</div>
+        <p>I design clear, engaging presentations that help ideas come to life and keep audiences hooked.</p>
         </div>
         <div class="box">
         <div class="icon">
         <i class="fas fa-android"></i>
         </div>
+         <div class="topic">Git</div>
+            <p>I use Git to manage various versions and keep track of all my project changes, which helps me stay organized and collaborate with teammates more effectively.</p>
+            </div>
+            <div class="box">
+            <div class="icon">
+            <i class="fas fa-camera-retro"></i>   
+            </div>
+             <div class="topic">GitHub</div>
+              <p>I store my projects online, and share my code for feedback and portfolio building on GitHub.</p>
+            </div>
+            <div class="box">
+             <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+              </div>
+              <div class="topic">Communication</div>
+              <p>I’m comfortable explaining ideas clearly and working within teams, whether it’s in group projects, presentations, or day-to-day teamwork.</p>
+              </div>
+            </div>
+          </div>    
+</section>
 
+
+<!--Footer Section Start-->
+<footer>
+    <div class="text">
+        <span>Created By <a href="#">amalapoduval</a>&;2025 All Rights Reserved</span>
+    </div>
+</footer>
+ 
+        
 </body>
 </html>
