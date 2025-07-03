@@ -117,8 +117,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: center; /* This centers the entire block of content horizontally on the page */
     gap: 4rem;
     position: relative;
     overflow: hidden;
@@ -136,7 +135,7 @@ section {
 .home-content {
     flex: 1 1 45%;
     max-width: 600px;
-    text-align: left;
+    text-align: left; /* Already set to left for home content */
 }
 
 .home-content h1 {
@@ -244,7 +243,7 @@ span {
     font-size: 5rem; /* 50px */
     margin-bottom: 4rem; /* Reduced margin */
     position: relative;
-    display: inline-block;
+    display: inline-block; /* Keeps the title itself centered via section's align-items */
 }
 
 .title h1::after {
@@ -264,6 +263,7 @@ span {
     font-size: 1.7rem; /* 17px */
     line-height: 1.7;
     max-width: 800px;
+    text-align: left; /* Aligns About Me paragraph text to the left */
 }
 
 /* Technologies & Skills Sections - Shared Layout */
@@ -271,8 +271,8 @@ span {
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem; /* Slightly reduced gap */
+    justify-content: center; /* Keeps boxes centered as a group */
+    gap: 2.5rem;
     width: 100%;
     max-width: 1200px;
 }
@@ -284,7 +284,8 @@ span {
     border-radius: 1.5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     flex: 1 1 270px; /* Adjusted flex basis */
-    text-align: center;
+    /* text-align: center; -- Keeping this here for now, as topic/per are often centered in boxes.
+                            If you want paragraph *inside* the box left, apply it to .box p */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 200px;
     display: flex;
@@ -321,12 +322,14 @@ span {
     font-size: 1.4rem; /* 14px for box paragraphs */
     line-height: 1.7;
     color: #ccc;
+    text-align: left; /* Aligns paragraph text inside skill boxes to the left */
 }
 
-/* Projects Section Styling (Placeholder) */
+/* Projects Section Styling */
 .projects p {
     font-size: 1.7rem; /* 17px */
     max-width: 800px;
+    text-align: left; /* Aligns Project description text to the left */
 }
 
 
@@ -344,7 +347,7 @@ span {
     }
 
     .home-content {
-        text-align: left;
+        text-align: left; /* Keep left alignment for mobile home content */
     }
 
     .home-content h1 {
@@ -365,7 +368,7 @@ span {
     }
 
     .social-icons {
-        text-align: center;
+        text-align: center; /* Social icons usually look good centered on mobile */
     }
 
     .btn {
@@ -384,17 +387,26 @@ span {
 
     .about p {
         font-size: 1.5rem; /* 15px */
+        text-align: left; /* Ensure it's left on mobile too */
     }
 
     .box {
         flex-basis: calc(100% - 2rem);
         max-width: 400px;
     }
+
+    .box p {
+        text-align: left; /* Ensure it's left on mobile too */
+    }
+
+    .projects p {
+        text-align: left; /* Ensure it's left on mobile too */
+    }
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
+    text-align: center; /* Footer text usually stays centered */
     padding: 2.5rem;
     font-size: 1.4rem; /* 14px */
     color: #ccc;
