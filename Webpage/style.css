@@ -301,55 +301,6 @@ section .button button:hover{
     color: #b74b4b;
 }
 
-.skills .skills-details{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.skills-details .text{
-    width: 100%;
-    margin-bottom: 50px;
-}
-.skills-details .boxes{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.services .boxe .box{
-    margin: 20px 0;
-    width: 100%;
-}
-.contact .text{
-    width: 100%;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Youtuber";
-    }
-    81%, 100%{
-        content: "Script Writer";
-    }
-}
-
-
-
-
 .skills{
     background: black;
 }
@@ -358,7 +309,7 @@ section .button button:hover{
 }
 .skills .skills-details{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
 .skills-details .text{
@@ -388,7 +339,7 @@ section .button button:hover{
     width: 45%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 }
 .skills-details .boxes{
     width: calc(100%/2-20px);
