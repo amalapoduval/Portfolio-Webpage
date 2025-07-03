@@ -301,77 +301,52 @@ section .button button:hover{
     color: #b74b4b;
 }
 
-.skills {
-  padding: 80px 20px;
-  background-color: #1a1a1a;
-  text-align: center;
+.services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/3-20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+    background: #b74b4b;
+    color: #fff;
+}
+.services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: #b74b4b;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+    background-color: #fff;
+    color: #b74b4b;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+    color: #fff;
 }
 
-.skills .title span {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f39c12;
-}
-
-.skills .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.skills .boxes .box {
-  margin: 20px 0;
-  width: calc(100% / 3 - 20px);
-  text-align: center;
-  border-radius: 12px;
-  padding: 30px 10px;
-  background-color: #222;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
-  color: white;
-  transition: all 0.4s ease;
-  cursor: default;
-}
-
-.skills .boxes .box:hover {
-  background: #b74b4b;
-  color: #fff;
-}
-
-.skills .boxes .box .icon {
-  height: 50px;
-  width: 50px;
-  background: #b74b4b;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  color: #fff;
-  margin: 0 auto 10px auto;
-  transition: all 0.4s ease;
-}
-
-.skills .boxes .box:hover .icon {
-  background-color: #fff;
-  color: #b74b4b;
-}
-
-.skills .boxes .box .title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.skills .boxes .box .per {
-  font-size: 0.95rem;
-  color: #ccc;
-  transition: color 0.4s ease;
-}
-
-.skills .boxes .box:hover .per {
-  color: #fff;
-}
 
 /* Projects Section */
 #Projects {
