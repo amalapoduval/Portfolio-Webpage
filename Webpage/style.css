@@ -305,7 +305,7 @@ section .button button:hover{
     background: black;
 }
 .skills .content{
-    padding: 40px 0;
+    padding: 10px;
 }
 .skills .skills-details{
     display: flex;
