@@ -13,10 +13,9 @@
 
 /* Base HTML and Body styles */
 html {
-    /* Critical: Set a larger base font size to make everything readable. */
-    /* 1rem will now be 16px by default if browser default is 16px */
+    /* CRITICAL: This sets the base for 'rem' units. 100% means 1rem = browser default (usually 16px). */
     font-size: 100%;
-    scroll-behavior: smooth; /* Smooth scrolling for nav links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,8 +23,7 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrollbar */
     background-color: black;
     color: white;
-    /* Ensure body doesn't collapse and dictates scroll */
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures body can dictate scroll for full-height sections */
 }
 
 /* Header Styling */
@@ -34,7 +32,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%; /* Increased vertical padding slightly */
+    padding: 1.5rem 9%;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     backdrop-filter: blur(8px); /* Stronger blur for better contrast */
     display: flex;
@@ -57,7 +55,7 @@ header {
 }
 
 nav a {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Should now be roughly 18px */
     color: white;
     margin-left: 4rem;
     font-weight: 500;
@@ -72,20 +70,19 @@ nav a.active {
 }
 
 /* --- Media Queries for Header/Navigation (Mobile Responsiveness) --- */
-/* For a proper mobile menu, you'll need a hamburger icon and JS to toggle the 'nav.active' class */
 @media(max-width:995px) {
     header {
         padding: 1rem 5%;
     }
 
     nav {
-        /* This hides the nav for mobile, you need JS to make it appear */
-        display: none;
+        /* This hides the nav for mobile unless a JS toggle is implemented */
+        display: none; /* Make sure this is 'none' by default on mobile */
         position: absolute;
         top: 100%; /* Position right below the header */
         left: 0;
         width: 100%;
-        background-color: rgba(22, 22, 22, 0.95); /* Darker background for mobile nav */
+        background-color: rgba(22, 22, 22, 0.95);
         border-bottom: 3px solid #b74b4b;
         padding: 2rem 0;
         text-align: center;
@@ -93,13 +90,13 @@ nav a.active {
     }
 
     nav.active {
-        display: flex; /* Changed to flex to use flex-direction: column */
+        display: flex; /* Activated by JavaScript for hamburger menu */
     }
 
     nav a {
         display: block;
-        font-size: 2.2rem;
-        margin: 1.5rem 0; /* Adjust spacing */
+        font-size: 2.2rem; /* Mobile nav links are slightly larger */
+        margin: 1.5rem 0;
         border-bottom: none;
     }
 
@@ -107,7 +104,7 @@ nav a.active {
     nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: rgba(183, 75, 75, 0.2); /* Light background on hover */
+        background-color: rgba(183, 75, 75, 0.2);
         border-bottom: 0.5rem solid #b74b4b;
     }
 }
@@ -115,16 +112,16 @@ nav a.active {
 
 /* Section General Styling */
 section {
-    min-height: 100vh; /* Each section tries to take at least full viewport height */
-    padding: 10rem 9% 5rem; /* Top padding increased to account for fixed header */
+    min-height: 100vh; /* Each section takes at least full viewport height */
+    padding: 10rem 9% 5rem; /* Top padding adjusted for fixed header */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center content */
     align-items: center; /* Horizontally center content */
     text-align: center; /* Center text within sections */
     gap: 4rem; /* Spacing between major elements within a section */
-    position: relative; /* Needed for any absolute positioning inside sections */
-    overflow: hidden; /* Hide any content that overflows within the section */
+    position: relative;
+    overflow: hidden;
 }
 
 /* Home Section Specifics */
@@ -138,7 +135,7 @@ section {
 
 .home-content {
     flex: 1 1 45%; /* Allow content to take about half width */
-    max-width: 600px; /* Limit content width for readability */
+    max-width: 600px;
     text-align: left; /* Align text to the left within its container */
 }
 
@@ -161,7 +158,7 @@ span {
 
 .home-img {
     flex: 1 1 45%; /* Image also takes about half width */
-    display: flex; /* Use flex to center image within its container */
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -169,7 +166,7 @@ span {
 }
 
 .home-img img {
-    width: 100%; /* Make image fill its flex container */
+    width: 100%;
     max-width: 400px; /* Max size for the image */
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(183, 75, 75, 0.7);
@@ -193,8 +190,8 @@ span {
 
 /* Social Icons */
 .social-icons {
-    text-align: left; /* Align social icons with the text */
-    margin-top: 2rem; /* Add some space */
+    text-align: left;
+    margin-top: 2rem;
 }
 
 .social-icons a {
@@ -207,7 +204,7 @@ span {
     border: 0.2rem solid #b74b4b;
     font-size: 2.2rem;
     border-radius: 50%;
-    margin-right: 1.5rem; /* Space between icons */
+    margin-right: 1.5rem;
     transition: 0.3s ease;
     color: #b74b4b;
 }
@@ -232,7 +229,7 @@ span {
     border: 2px solid #b74b4b;
     transition: 0.3s ease;
     cursor: pointer;
-    margin-top: 3rem; /* Space above button */
+    margin-top: 3rem;
 }
 
 .btn:hover {
@@ -285,7 +282,7 @@ span {
     padding: 3rem 2.5rem;
     border-radius: 1.5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    flex: 1 1 280px; /* Flexible basis for responsiveness */
+    flex: 1 1 280px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 200px;
@@ -341,12 +338,12 @@ span {
 
 @media(max-width:768px) {
     .home {
-        flex-direction: column; /* Stack home content vertically */
-        padding-top: 10rem; /* Adjust padding for smaller screens */
+        flex-direction: column;
+        padding-top: 10rem;
     }
 
     .home-content {
-        text-align: center; /* Center content on small screens */
+        text-align: center;
     }
 
     .home-content h1 {
@@ -362,12 +359,12 @@ span {
     }
 
     .home-img img {
-        width: 60vw; /* Adjust image size for smaller screens */
-        max-width: 300px; /* Ensure it doesn't get too big */
+        width: 60vw;
+        max-width: 300px;
     }
 
     .social-icons {
-        text-align: center; /* Center social icons on small screens */
+        text-align: center;
     }
 
     .btn {
@@ -375,7 +372,7 @@ span {
     }
 
     section {
-        padding: 8rem 5% 5rem; /* Consistent padding for all sections on mobile */
+        padding: 8rem 5% 5rem;
         gap: 3rem;
     }
 
@@ -389,8 +386,8 @@ span {
     }
 
     .box {
-        flex-basis: calc(100% - 2rem); /* Boxes take full width with gap */
-        max-width: 400px; /* Limit box width on very small screens */
+        flex-basis: calc(100% - 2rem);
+        max-width: 400px;
     }
 }
 
