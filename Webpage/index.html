@@ -132,33 +132,38 @@
     </footer>
 
     <script>
-        // Optional: JavaScript for active navigation link on scroll
+        // JavaScript for active navigation link on scroll
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('header nav a');
 
         window.onscroll = () => {
             sections.forEach(sec => {
                 let top = window.scrollY;
-                let offset = sec.offsetTop - 150; // Adjust offset if needed
+                let offset = sec.offsetTop - 150; // Adjust offset if needed for header height
                 let height = sec.offsetHeight;
                 let id = sec.getAttribute('id');
 
                 if (top >= offset && top < offset + height) {
                     navLinks.forEach(links => {
                         links.classList.remove('active');
+                        // Add 'active' class to the corresponding nav link
                         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
                     });
                 }
             });
         };
 
-        // Optional: JavaScript for mobile navigation toggle (if you implement a hamburger menu)
-        // You'd need a button in your HTML for this.
+        // --- IMPORTANT FOR MOBILE NAV ---
+        // If you want a hamburger menu, you'll need to add a button to your HTML header
+        // For example: <div id="menu-icon" class="fas fa-bars"></div>
+        // And then uncomment/use this JS:
         // const menuIcon = document.querySelector('#menu-icon');
-        // const navbar = document.querySelector('.navbar');
-        // menuIcon.onclick = () => {
-        //     navbar.classList.toggle('active');
-        // };
+        // const navbar = document.querySelector('header nav'); // Target the nav element
+        // if (menuIcon) {
+        //     menuIcon.onclick = () => {
+        //         navbar.classList.toggle('active');
+        //     };
+        // }
     </script>
 </body>
 </html>
