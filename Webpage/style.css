@@ -331,7 +331,7 @@ section .button button:hover{
 .skills-details .experience .exp{
     color: white;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 1.2rep;
     font-weight: 500;
     margin: 0 6px;
 }
