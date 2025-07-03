@@ -313,7 +313,15 @@ section .button button:hover{
     justify-content: space-between;
 }
 .skills-details .text{
-    width: 50%;
+    margin: 20px 0;
+    width: calc(100%/3-20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
 }
 .skills-details p{
     color: white;
