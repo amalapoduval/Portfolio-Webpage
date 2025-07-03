@@ -313,42 +313,66 @@ section .button button:hover{
   color: #f39c12;
 }
 
+/* Matching the .services layout */
 .skills .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
-.skills .box {
+.skills .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
   background-color: #222;
-  padding: 30px 20px;
-  border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  transition: transform 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  color: white;
+  transition: all 0.4s ease;
+  cursor: default;
 }
 
-.skills .box:hover {
-  transform: translateY(-5px);
+.skills .boxes .box:hover {
+  background: #b74b4b;
+  color: #fff;
 }
 
-.skills .icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #f39c12;
+/* Skill icon styling */
+.skills .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #b74b4b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
 }
 
-.skills .title {
+.skills .boxes .box:hover .icon {
+  background-color: #fff;
+  color: #b74b4b;
+}
+
+/* Skill title and percentage */
+.skills .boxes .box .title {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.skills .per {
-  font-size: 1rem;
+.skills .boxes .box .per {
+  font-size: 0.95rem;
   color: #ccc;
+}
+
+.skills .boxes .box:hover .title,
+.skills .boxes .box:hover .per {
+  color: #fff;
 }
 
 /* Projects Section */
