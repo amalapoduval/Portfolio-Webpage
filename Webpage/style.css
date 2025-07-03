@@ -282,20 +282,20 @@ section.content{
     justify-content: space-between;
     align-items: center;
 }
-section.title{
+section.about.content title{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-section .title span{
+section.about.content .title span{
     color: white;
     font-size: 30px;
     font-weight: 600;
     position: relative;
     padding-bottom: 8px;
 }
-section .title span::before,
-section .title span::after{
+section.about.content .title span::before,
+section.about.content .title span::after{
     content: ";
     position: absolute;
     height: 3px;
@@ -304,7 +304,7 @@ section .title span::after{
     left: 0;
     bottom: 0;
 }
-section .title span::after{
+section.about.content .title span::after{
     bottom: -7px;
     width: 70%;
     left: 50%;
@@ -313,7 +313,7 @@ section .title span::after{
 .about .about-details .left{
     width: 45%;
 }
-.about .left img{
+section .about.content.left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
@@ -332,7 +332,7 @@ section .topic{
     text-align: justify;
     color: white;
 }
-.about .image{
+.section .about.content.image{
     width: 500px;
     height: 80vh;
     border-radius: 100%;
@@ -340,7 +340,7 @@ section .topic{
     box-shadow: 0 0 50px #b74b4b;
 }
 
-.about .image img{
+section .about.content.image img{
     width: 100%;
 }
 
