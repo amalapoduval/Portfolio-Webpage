@@ -1,0 +1,24 @@
+noun = input("Noun: ")
+verb = input("Verb: ")
+pronoun = input("Pronoun: ")
+noun2 = input("Noun: ")
+verb2 = input("Verb: ")
+noun3 = input("Noun: ")
+adjective = input("Adjective: ")
+noun4 = input("Noun: ")
+verb3 = input("Verb: ")
+adjective2 = input("Adjective: ")
+noun5 = input("Noun: ")
+noun6 = input("Noun: ")
+adjective3 = input("Adjective: ")
+noun7 = input("Noun: ")
+
+
+madlibs = f "Once, there was a {noun} whose dream in life was {verb}. 
+Everyone told {pronoun} that {noun2} can't {verb2}, but {noun3} was {adjective}. 
+First, he went to {noun4}.
+There he {verb3}, but that just made everyone {adjective2}.
+From there, he made the long trip to {noun5}, where to his surprise, he discovered {noun6}. 
+Feeling <adjective3>, he went back home, bringing with him a {noun7}."
+
+print(madlibs)
