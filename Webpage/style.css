@@ -301,12 +301,12 @@ section .button button:hover{
     color: #b74b4b;
 }
 
-.services .boxes{
+.skills .boxes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.services .boxes .box{
+.skills .boxes .box{
     margin: 20px 0;
     width: calc(100%/3-20px);
     text-align: center;
@@ -317,11 +317,11 @@ section .button button:hover{
     color: white;
     transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+.skills .boxes .box:hover{
     background: #b74b4b;
     color: #fff;
 }
-.services .boxes .box .icon{
+.skillss .boxes .box .icon{
     height: 50px;
     width: 50px;
     background: #b74b4b;
@@ -337,13 +337,13 @@ section .button button:hover{
     background-color: #fff;
     color: #b74b4b;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.skills .boxes .box:hover .topic,
+.skills .boxes .box:hover p{
     color: white;
     transition: all 0.4s ease;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.skills .boxes .box:hover .topic,
+.skills .boxes .box:hover p{
     color: #fff;
 }
 
