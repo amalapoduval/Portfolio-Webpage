@@ -313,7 +313,6 @@ section .button button:hover{
   color: #f39c12;
 }
 
-/* Matching the .services layout */
 .skills .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -339,7 +338,6 @@ section .button button:hover{
   color: #fff;
 }
 
-/* Skill icon styling */
 .skills .boxes .box .icon {
   height: 50px;
   width: 50px;
@@ -358,19 +356,19 @@ section .button button:hover{
   color: #b74b4b;
 }
 
-/* Skill title and percentage */
 .skills .boxes .box .title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #fff;
 }
 
 .skills .boxes .box .per {
   font-size: 0.95rem;
   color: #ccc;
+  transition: color 0.4s ease;
 }
 
-.skills .boxes .box:hover .title,
 .skills .boxes .box:hover .per {
   color: #fff;
 }
