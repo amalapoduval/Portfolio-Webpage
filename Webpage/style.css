@@ -102,16 +102,20 @@ nav{
     color:#b74b4b;
 }
 
-.dropdown{
+.dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
-    transform: translateY(-500px)
+    transform: translateY(-500px);
     width: 100%;
     height: auto;
-    backdrop-filter: blur(4px)brightness 40%;
     box-shadow: 0 0 20px black;
-    transition: 0.2s linear;   
+    transition: 0.2s linear;
+}
+
+/* Optional: Apply a backdrop effect — but you must use backdrop-filter */
+.dropdown::backdrop {
+    backdrop-filter: blur(4px) brightness(40%);
 }
 
 .dropdown.link a{
