@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,6 +43,18 @@ header{
     cursor: pointer;
     transition: 0.5s ease;
 }
+
+.links{
+    font-size: 2rem;
+    color: #white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+
+
 
 .logo:hover{
     transform: scale(1.1);
