@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+
 body{
     width: 100%;
     height: auto;
@@ -31,11 +32,11 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background:#b74b4b;
 }
-
 /*navbar styling*/
 nav{
     width: 100%;
     height: 10vh;
+
 }
 
 .nav-container {
@@ -54,10 +55,9 @@ nav{
 
 .logo span{
     color:#b74b4b;
-    text-shadow: 0 0 10px #b74b4b;
+    text-shadow: 0 0 10px #b74b4b 
 }
 
-/* FIXED: Added missing semicolon and corrected syntax */
 .hamburg,
 .cancel{
     cursor: pointer;
@@ -67,15 +67,14 @@ nav{
     color: white;
     opacity: 0;
     pointer-events: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    font-size: clamp (2.5rem, 0.5rem + 5vw, 3rem);
 }
 
-/* FIXED: Added missing space after .nav-container */
-.nav-container .links{
+.nav-container.links{
     display: flex;
 }
 
-.nav-container .links a{
+.nav-container.links a{
     position: relative;
     font-size: 1.2rem;
     color: white;
@@ -85,7 +84,7 @@ nav{
     transition: 0.3s linear;
 }
 
-.nav-container .links a::before{
+.nav-container.links a::before{
     position: absolute;
     content: "";
     bottom: -3px;
@@ -96,11 +95,11 @@ nav{
     transition: 0.2s linear;
 }
 
-.nav-container .links a:hover::before{
+.nav-container.links a:hover::before{
     width: 100%;
 }
 
-.nav-container .links a:hover{
+.nav-container.links a:hover{
     color:#b74b4b;
 }
 
@@ -111,13 +110,16 @@ nav{
     transform: translateY(-500px);
     width: 100%;
     height: auto;
-    background-color: black; /* FIXED: Added background color */
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
 
-/* FIXED: Corrected selector - removed space */
-.dropdown .links a{
+/* Optional: Apply a backdrop effect — but you must use backdrop-filter */
+.dropdown::backdrop {
+    backdrop-filter: blur(4px) brightness(40%);
+}
+
+.dropdown.link a{
     display: flex;
     color:white;
     text-decoration: none;
@@ -127,7 +129,7 @@ nav{
     transition: 0.2s linear;
 }
 
-.dropdown .links a:hover{
+.dropdown.links a:hover{
     background-color: #b74b4b;
 }
 
@@ -136,12 +138,12 @@ section{
     min-height: 90vh;
 }
 
-/* FIXED: Added missing space after section */
-section .main-container{
-    display: flex;
-    justify-content:space-between;
-    padding-left: 100px;
-    align-items: center;
+section.main-container{
+
+display: flex;
+justify-content:space-between;
+padding-left: 100px;
+align-items: center;
 }
 
 .main-container .image{
@@ -154,18 +156,33 @@ section .main-container{
 
 .main-container .image img{
     width: 100%;
-    height: 100%; /* FIXED: Added height to prevent image distortion */
-    object-fit: cover; /* FIXED: Added to maintain aspect ratio */
 }
 
-/* FIXED: Added missing space after .main-container */
-.main-container .content{
+/*.main-container .image:hover{
+    animation:animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%{
+        scale:1;
+    }
+
+    50%{
+        scale: 1.05;
+    }
+
+    100%{
+        scale: 1;
+    }
+}*/
+
+.main-container.content{
     color: white;
     width: 40%;
 }
 
 .content h1{
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem); /* FIXED: Changed comma to period */     
+    font-size: clamp(1rem, 1rem + 5vw, 1,8rem);      
 }
 
 .content h1 span{
@@ -173,13 +190,12 @@ section .main-container{
     text-shadow: 0 0 10px #b74b4b;
 }
 
-/* FIXED: Added missing space after .content */
-.content .typewriter{
+.content.typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
 }
 
-.content .typewriter-text{
+.content.typewriter-text{
     color:#b74b4b;
     text-shadow: 0 0 10px #b74b4b;
 }
@@ -235,26 +251,24 @@ section .main-container{
 }
 
 /*About Section Styling*/
-/* FIXED: Added missing space after section */
-section .content{
+
+
+
+section.content{
     width: 80%;
     margin: 0px auto;
     font-family: 'Poppins', sans-serif;
 }
-
 .about .about-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* FIXED: Added missing space after section */
-section .title{
+section.title{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-
 section .title span{
     color: white;
     font-size: 30px;
@@ -262,7 +276,6 @@ section .title span{
     position: relative;
     padding-bottom: 8px;
 }
-
 section .title span::before,
 section .title span::after{
     content: '';
@@ -273,46 +286,37 @@ section .title span::after{
     left: 0;
     bottom: 0;
 }
-
 section .title span::after{
     bottom: -7px;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .about .about-details .left{
     width: 45%;
 }
-
 .about .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 12px;
 }
-
 .about-details .right{
     width: 55%;
 }
-
 section .topic{
     color: white;
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-
 .about-details .right p{
     text-align: justify;
     color: white;
 }
-
-/* FIXED: Added missing space after section */
-section .button{
+section.button{
     margin: 16px 0;
 }
-
 section .button button{
     outline: none;
     padding: 8px 16px;
@@ -325,7 +329,6 @@ section .button button{
     cursor: pointer;
     transition: all 0.4s ease;
 }
-
 section .button button:hover{
     border-color: #b74b4b;
     background-color: #fff;
@@ -335,38 +338,30 @@ section .button button:hover{
 .skills{
     background: black;
 }
-
 .skills .content{
     padding: 40px 0;
 }
-
 .skills .skills-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .skills-details .text{
     width: 50%;
 }
-
 .skills-details p{
     color: white;
     text-align: justify;
 }
-
-/* FIXED: Added missing space after .skills-details */
-.skills .skills-details .experience{
+.skills .skills-details.experience{
     display: flex;
     align-items: center;
     margin: 0 10px;
 }
-
 .skills-details .experience .num{
     color: white;
     font-size: 80px;
 }
-
 .skills-details .experience .exp{
     color: white;
     margin-left: 20px;
@@ -374,24 +369,20 @@ section .button button:hover{
     font-weight: 500;
     margin: 0 6px;
 }
-
 .skills-details .boxes{
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .skills-details .box{
     width: calc(100%/2-20px);
     margin: 20px 0;
 }
-
 .skills-details .boxes .topic{
     font-size: 20px;
     color: #b74b4b;
 }
-
 .skills-details .boxes .per{
     font-size: 60px;
     color: #b74b4b;
@@ -402,7 +393,6 @@ section .button button:hover{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .services .boxes .box{
     margin: 20px 0;
     width: calc(100%/3-20px);
@@ -414,12 +404,10 @@ section .button button:hover{
     color: white;
     transition: all 0.4s ease;
 }
-
 .services .boxes .box:hover{
     background: #b74b4b;
     color: #fff;
 }
-
 .services .boxes .box .icon{
     height: 50px;
     width: 50px;
@@ -432,12 +420,15 @@ section .button button:hover{
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
-
 .boxes .box:hover .icon{
     background-color: #fff;
     color: #b74b4b;
 }
-
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+}
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
     color: #fff;
@@ -449,22 +440,18 @@ footer{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
-
 footer .text span{
     font-size: 17px;
     font-weight: 400;
     color: #fff;
 }
-
 footer .text span a{
     font-weight: 500;
     color: #fff;
 }
-
 footer .text span a:hover{
     text-decoration: underline;
 }
-
 .scroll-button a{
     position: fixed;
     bottom: 20px;
@@ -478,84 +465,99 @@ footer .text span a:hover{
     display: none;
 }
 
-/* FIXED: Added missing opening brace */
-@media (max-width: 1000px) {
-    .about .about-details{
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .about .about-details .left{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .about-details .right{
-        width: 90%;
-        margin: 40px 0;
-    }
-    
-    .services .boxes .box{
-        margin: 20px 0;
-        width: calc(100%/2-20px);
-    }
+
+@media (max-width: 1000px)
+.about .about-details{
+    justify-content: center;
+    flex-direction: column;
 }
+.about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.about-details .right{
+    width: 90%;
+    margin: 40px 0;
+}
+.services .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/2-20px);
+}
+
+
+/*@media (max-width: 900px) {
+    .about .left img{
+        height: 350px;
+        width: 350px;
+    }
+} */
 
 @media (max-width: 968px) {
-    /* FIXED: Added missing space after nav */
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
 
-    section .main-container{
-        padding-left: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* FIXED: Added missing space after .nav-container */
-    .nav-container .links{
-        display: none;
-    }
-
-    .hamburg,
-    .cancel{
-        opacity: 1;
-        pointer-events: visible;
-    }
-
-    /* FIXED: Added missing space after .main-container */
-    .main-container .content{
-        margin-top: 20px;
-        width: 80%;
-    }
-
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-
-    .skills-details .text{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    
-    .skills-details .boxes{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .services .boxes .box{
-        margin: 20px 0;
-        width: 100%;
-    }
+nav.logo{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 1.5rem;
 }
+
+section .main-container{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container.links{
+    display: none;
+}
+
+.hamburg,
+.cancel{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.main-container.content{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.social-links i{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+/*.main-container .image{
+    z-index: -1;
+    width: 50%;
+    height: 60%;
+}
+
+.skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+}
+/*.contact .text{
+    width: 100%;
+}
+} */
 
 @media (max-width: 500px){
     .main-container .image{
@@ -564,17 +566,16 @@ footer .text span a:hover{
         margin-bottom: 0px;
     }
 
-    /* FIXED: Added missing space after .main-container */
-    .main-container .content{
-        width: 80%;
-    }
+.main-container.content{
+    width: 80%;
+}
 
-    .main-container button{
-        margin-top: 15px;
-    }
+.main-container button{
+    margin-top: 15px;
+}
 
-    .skills-details .boxes .per{
-        font-size: 50px;
-        color: #b74b4b;
-    }
+.skills-details .boxes .per{
+    font-size: 50px;
+    color: #b74b4b;
+}
 }
