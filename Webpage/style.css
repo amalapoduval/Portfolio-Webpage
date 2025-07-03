@@ -191,33 +191,6 @@ span{
     box-shadow: 0 0 25px #b74b4b;
 }
 
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: "software Developer";
-    color: #b74b4b;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
 /*About Section Styling*/
 
 section.content{
@@ -258,48 +231,6 @@ section .title span::after{
     left: 50%;
     transform: translateX(-50%);
 }
-.about .about-details .left{
-    width: 45%;
-}
-.about .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.about-details .right{
-    width: 55%;
-}
-section .topic{
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.about-details .right p{
-    text-align: justify;
-    color: white;
-}
-section.button{
-    margin: 16px 0;
-}
-section .button button{
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #b74b4b;
-    color: #fff;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all;
-}
-section .button button:hover{
-    border-color: #b74b4b;
-    background-color: #fff;
-    color: #b74b4b;
-}
 
 .skills{
     background: #b74b4b;
@@ -313,7 +244,7 @@ section .button button:hover{
     text-align: center;
 }
 .skills-details .text{
-    width: 50px;
+    width: calc(100%/3-20px);
 }
 .skills-details p{
     color: white;
