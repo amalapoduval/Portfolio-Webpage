@@ -266,141 +266,189 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
-    /*About Section Styling*/
-section.content{
-    width: 80%;
-    margin: 0px auto;
-    font-family: 'Poppins', sans-serif;
+/* ──────────────────────────────────────────
+   ABOUT SECTION
+   ────────────────────────────────────────── */
+
+.about .content {
+  width: 80%;
+  margin: 0 auto;
 }
-.about .about-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.about .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
-section.title{
-    display: flex;
+
+.about .title span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.about .title span::before,
+.about .title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #b74b4b;
+}
+
+.about .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -7px;
+}
+
+.about .about-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* keeps layout tidy on smaller screens */
+}
+
+.about .about-details .left {
+  flex: 1 1 45%;
+}
+
+.about .about-details .right {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about .about-details .right img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.about .about-details p {
+  color: #fff;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ──────────────────────────────────────────
+   SKILLS SECTION (Technologies grid)
+   ────────────────────────────────────────── */
+
+.skills {
+  background: #000;
+  padding: 40px 0;
+}
+
+.skills .content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills .title span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.skills .title span::before,
+.skills .title span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #b74b4b;
+  left: 0;
+  bottom: 0;
+}
+
+.skills .title span::after {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -7px;
+}
+
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.skills .box {
+  flex: 1 1 calc(33.333% - 20px); /* 3‑per‑row layout */
+  background: #111;
+  text-align: center;
+  border-radius: 12px;
+  padding: 25px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.skills .box .topic {
+  font-size: 20px;
+  color: #b74b4b;
+  margin-bottom: 6px;
+}
+
+.skills .box .per {
+  font-size: 48px;
+  color: #b74b4b;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.skills .box:hover {
+  background: #b74b4b;
+}
+
+.skills .box:hover .topic,
+.skills .box:hover .per {
+  color: #fff;
+}
+
+/* ──────────────────────────────────────────
+   RESPONSIVE TWEAKS
+   ────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .about .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .about-details .right {
     justify-content: center;
-    margin-bottom: 40px;
-}
-section .title span{
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;
-}
-section .title span::before,
-section .title span::after{
-    content: ";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #b74b4b;
-    left: 0;
-    bottom: 0;
-}
-section .title span::after{
-    bottom: -7px;
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.about .about-details .left{
-    width: 45%;
-}
-.about .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.about-details .right{
-    width: 55%;
-}
-section .topic{
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.about-details .right p{
-    text-align: justify;
-    color: white;
-}
-section.button{
-    margin: 16px 0;
-}
-section .button button{
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #b74b4b;
-    color: #fff;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all;
-}
-section .button button:hover{
-    border-color: #b74b4b;
-    background-color: #fff;
-    color: #b74b4b;
+  }
+  .about .about-details .right img {
+    width: 300px;
+    height: 300px;
+  }
+  .skills .box {
+    flex: 1 1 calc(50% - 20px); /* 2‑per‑row on tablets */
+  }
 }
 
+@media (max-width: 600px) {
+  .skills .box {
+    flex: 1 1 100%; /* full‑width on mobile */
+  }
+}
 
-
-
-.skills{
-    background: black;
-}
-.skills .content{
-    padding: 40px 0;
-}
-.skills .skills-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.skills-details .text{
-    width: 50%;
-}
-.skills-details p{
-    color: white;
-    text-align: justify;
-}
-.skills .skills-details.experience{
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-.skills-details .experience .num{
-    color: white;
-    font-size: 80px;
-}
-.skills-details .experience .exp{
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-}
-.skills-details .boxes{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.skills-details .boxes{
-    width: calc(100%/2-20px);
-    margin: 20px 0;
-}
-.skills-details .boxes .topic{
-    font-size: 20px;
-    color: #b74b4b;
-}
-.skills-details .boxes .per{
-    font-size: 60px;
-    color: #b74b4b;
 
 }
