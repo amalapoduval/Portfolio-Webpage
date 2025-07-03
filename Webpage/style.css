@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+
 body{
     width: 100%;
     height: auto;
@@ -109,7 +110,7 @@ nav{
     transform: translateY(-500px)
     width: 100%;
     height: auto;
-    ::backdrop-filter: blur(4px)brightness 40%
+    backdrop-filter: blur(4px)brightness 40%;
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;   
 }
@@ -153,7 +154,7 @@ align-items: center;
     width: 100%;
 }
 
-.main-container .image:hover{
+/*.main-container .image:hover{
     animation:animate 1.5s ease-in-out infinite;
 }
 
@@ -169,7 +170,7 @@ align-items: center;
     100%{
         scale: 1;
     }
-}
+}*/
 
 .main-container.content{
     color: white;
@@ -192,7 +193,7 @@ align-items: center;
 
 .content.typewriter-text{
     color:#b74b4b;
-    text-shadow: 0 0 10px #b74b4b
+    text-shadow: 0 0 10px #b74b4b;
 }
 
 .content p{
@@ -216,7 +217,7 @@ align-items: center;
 }
 
 .social-links i:hover{
-    scale: 1,3;
+    scale: 1.3;
     color: black;
     background-color: #b74b4b;
     filter: drop-shadow(0 0 10px #b74b4b);   
@@ -273,7 +274,7 @@ section .title span{
 }
 section .title span::before,
 section .title span::after{
-    content: ";
+    content: '';
     position: absolute;
     height: 3px;
     width: 100%;
@@ -322,7 +323,7 @@ section .button button{
     color: #fff;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: all;
+    transition: all 0.4s ease;
 }
 section .button button:hover{
     border-color: #b74b4b;
@@ -370,7 +371,7 @@ section .button button:hover{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.skills-details .boxes{
+.skills-details .box{
     width: calc(100%/2-20px);
     margin: 20px 0;
 }
@@ -394,7 +395,7 @@ section .button button:hover{
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     cursor: default;
     color: white;
     transition: all 0.4s ease;
@@ -428,19 +429,19 @@ section .button button:hover{
 .services .boxes .box:hover p{
     color: #fff;
 }
-/*Contact Me CSS*/
-.content{
-    background-color: black;
-}
-.content .content{
-    margin: 0 auto;
-    padding: 30px 0;
-}
-.content .text{
-    width: 80%;
-    text-align: center;
-    margin: auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background: #b74b4b;
@@ -494,12 +495,12 @@ footer .text span a:hover{
 }
 
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
     .about .left img{
         height: 350px;
         width: 350px;
     }
-}
+} */
 
 @media (max-width: 968px) {
 
@@ -537,7 +538,7 @@ section .main-container{
     font-size: 1.5rem;
 }
 
-.main-container .image{
+/*.main-container .image{
     z-index: -1;
     width: 50%;
     height: 60%;
@@ -547,7 +548,8 @@ section .main-container{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} */
+
 .skills-details .text{
     width: 100%;
     margin-bottom: 50px;
@@ -557,14 +559,14 @@ section .main-container{
     align-items: center;
     width: 100%;
 }
-.services .boxe .box{
+.services .boxes .box{
     margin: 20px 0;
     width: 100%;
 }
-.contact .text{
+/*.contact .text{
     width: 100%;
 }
-}
+} */
 
 @media (max-width: 500px){
     .main-container .image{
@@ -577,11 +579,11 @@ section .main-container{
     width: 80%;
 }
 
-.main-container.button{
+.main-container button{
     margin-top: 15px;
 }
 
-.skills-details .boxes .pen{
+.skills-details .boxes .per{
     font-size: 50px;
     color: #b74b4b;
 }
