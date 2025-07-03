@@ -301,270 +301,99 @@ section .button button:hover{
     color: #b74b4b;
 }
 
-.skills{
-    background: black;
-}
-.skills .content{
-    padding: 40px 0;
-}
-.skills .skills-details{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.skills-details .text{
-    margin: 20px 0;
-    width: calc(100%/3-20px);
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
-    cursor: default;
-    color: white;
-    transition: all 0.4s ease;
-}
-.skills-details p{
-    color: white;
-    text-align: justify;
-}
-.skills .skills-details.experience{
-    margin: 20px 0;
-    width: calc(100%/3-20px);
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
-    cursor: default;
-    color: white;
-    transition: all 0.4s ease;
-}
-.skills-details .experience .num{
-    color: white;
-    font-size: 80px;
-}
-.skills-details .experience .exp{
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-}
-.skills-details .boxes{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.skills-details .boxes{
-    width: calc(100%/2-20px);
-    margin: 20px 0;
-}
-.skills-details .boxes .topic{
-    font-size: 20px;
-    color: #b74b4b;
-}
-.skills-details .boxes .per{
-    font-size: 60px;
-    color: #b74b4b;
+.skills {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
 }
 
-
-.boxes .box:hover .icon{
-    background-color: #fff;
-    color: #b74b4b;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-    color: white;
-    transition: all 0.4s ease;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-    color: #fff;
-}
-/*Contact Me CSS*/
-.content{
-    background-color: black;
-}
-.content .content{
-    margin: 0 auto;
-    padding: 30px 0;
-}
-.content .text{
-    width: 80%;
-    text-align: center;
-    margin: auto;
+.skills .title span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f39c12;
 }
 
-footer{
-    background: #b74b4b;
-    padding: 15px 0;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-footer .text span{
-    font-size: 17px;
-    font-weight: 400;
-    color: #fff;
-}
-footer .text span a{
-    font-weight: 500;
-    color: #fff;
-}
-footer .text span a:hover{
-    text-decoration: underline;
-}
-.scroll-button a{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: #fff;
-    background: #b74b4b;
-    padding: 7px 12px;
-    font-size: 18px;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.15);
-    display: none;
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-
-@media (max-width: 1000px)
-.about .about-details{
-    justify-content: center;
-    flex-direction: column;
-}
-.about .about-details .left{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.about-details .right{
-    width: 90%;
-    margin: 40px 0;
-}
-.services .boxes .box{
-    margin: 20px 0;
-    width: calc(100%/2-20px);
+.skills .box {
+  background-color: #222;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
 }
 
-
-@media (max-width: 900px) {
-    .about .left img{
-        height: 350px;
-        width: 350px;
-    }
+.skills .box:hover {
+  transform: translateY(-5px);
 }
 
-@media (max-width: 968px) {
-
-nav.logo{
-    position: absolute;
-    top: 16px;
-    left: 15px;
-    font-size: 1.5rem;
+.skills .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f39c12;
 }
 
-section .main-container{
-    padding-left: 0px;
-    display: flex;
-    flex-direction: column;
+.skills .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.nav-container.links{
-    display: none;
+.skills .per {
+  font-size: 1rem;
+  color: #ccc;
 }
 
-.hamburg,
-.cancel{
-    opacity: 1;
-    pointer-events: visible;
+/* Projects Section */
+#Projects {
+  padding: 80px 20px;
+  background-color: #111;
+  text-align: center;
 }
 
-.main-container.content{
-    margin-top: 20px;
-    width: 80%;
+#Projects .title span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f39c12;
 }
 
-.social-links i{
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
+#Projects .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.main-container .image{
-    z-index: -1;
-    width: 50%;
-    height: 60%;
+#Projects .box {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
 }
 
-.skills .skills-details{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.skills-details .text{
-    width: 100%;
-    margin-bottom: 50px;
-}
-.skills-details .boxes{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.services .boxe .box{
-    margin: 20px 0;
-    width: 100%;
-}
-.contact .text{
-    width: 100%;
+#Projects .box:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes cursor{
-    to{
-        border-left: 3px solid #b74b4b;
-    }
+#Projects .topic {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #f39c12;
 }
 
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Youtuber";
-    }
-    81%, 100%{
-        content: "Script Writer";
-    }
-}
-
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
+#Projects p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
 }
