@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
 }
 
-
 body{
     width: 100%;
     height: auto;
@@ -248,8 +247,6 @@ align-items: center;
 
 /*About Section Styling*/
 
-
-
 section.content{
     width: 80%;
     margin: 0px auto;
@@ -429,19 +426,6 @@ section .button button:hover{
 .services .boxes .box:hover p{
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     background: #b74b4b;
