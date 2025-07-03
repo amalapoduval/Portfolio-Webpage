@@ -302,18 +302,18 @@ section .button button:hover{
 }
 
 .skills{
-    background: black;
+    background: #b74b4b;
 }
 .skills .content{
-    padding: 40px 0;
+    padding: 30px 10;
 }
 .skills .skills-details{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 .skills-details .text{
-    width: 50%;
+    width: 50px;
 }
 .skills-details p{
     color: white;
@@ -322,11 +322,11 @@ section .button button:hover{
 .skills .skills-details.experience{
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 auto 10px auto;
 }
 .skills-details .experience .num{
     color: white;
-    font-size: 80px;
+    font-size: 18px;
 }
 .skills-details .experience .exp{
     color: white;
