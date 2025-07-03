@@ -121,8 +121,9 @@ span{
     color: #b74b4b;
 }
 
-.home-content h3{
+.home-content{
     font-size: 4rem;
+    align-item: center;
     margin-bottom: 1rem;
     font-weight: 700;
 }
