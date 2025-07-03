@@ -228,24 +228,6 @@ span{
     }
 }
 
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Youtuber";
-    }
-    81%, 100%{
-        content: "Script Writer";
-    }
-}
-
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
@@ -272,7 +254,14 @@ span{
     }
 
 /*About Section Styling*/
-section.content{
+#h1{
+    font-size: 3rem;
+    color: #White;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;  
+}
+    section.content{
     width: 80%;
     margin: 0px auto;
     font-family: 'Poppins', sans-serif;
