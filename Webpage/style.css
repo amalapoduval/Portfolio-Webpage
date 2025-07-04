@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/* Universal Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +11,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Base HTML and Body styles */
+
 html {
-    /* This setting means 1rem will be 10px on most browsers (16px * 0.625 = 10px) */
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -24,17 +23,15 @@ body {
     background-color: black;
     color: white;
     min-height: 100vh;
-    /* Base font size for general text. If 1rem is 10px, this is 14px. */
     font-size: 1.4rem;
 }
 
-/* Header Styling */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.2rem 9%; /* Slightly reduced padding */
+    padding: 1.2rem 9%; 
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     display: flex;
@@ -57,9 +54,9 @@ header {
 }
 
 nav a {
-    font-size: 1.6rem; /* 16px - reduced for navigation */
+    font-size: 1.6rem; 
     color: white;
-    margin-left: 3.5rem; /* Slightly reduced margin */
+    margin-left: 3.5rem; 
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -71,7 +68,6 @@ nav a.active {
     border-bottom: 3px solid #b74b4b;
 }
 
-/* --- Media Queries for Header/Navigation (Mobile Responsiveness) --- */
 @media(max-width:995px) {
     header {
         padding: 1rem 5%;
@@ -85,7 +81,7 @@ nav a.active {
         width: 100%;
         background-color: rgba(22, 22, 22, 0.95);
         border-bottom: 3px solid #b74b4b;
-        padding: 1.5rem 0; /* Adjusted padding for mobile nav */
+        padding: 1.5rem 0; 
         text-align: center;
         flex-direction: column;
     }
@@ -95,8 +91,8 @@ nav a.active {
     }
 
     nav a {
-        font-size: 1.8rem; /* 18px for mobile nav links */
-        margin: 1rem 0; /* Adjusted margin for mobile nav */
+        font-size: 1.8rem; 
+        margin: 1rem 0; 
         border-bottom: none;
     }
 
@@ -110,20 +106,18 @@ nav a.active {
 }
 
 
-/* Section General Styling */
 section {
     min-height: 100vh;
     padding: 10rem 9% 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* This centers the entire block of content horizontally on the page */
+    align-items: center; 
     gap: 4rem;
     position: relative;
     overflow: hidden;
 }
 
-/* Home Section Specifics */
 .home {
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,18 +129,18 @@ section {
 .home-content {
     flex: 1 1 45%;
     max-width: 600px;
-    text-align: left; /* Already set to left for home content */
+    text-align: left; 
 }
 
 .home-content h1 {
-    font-size: 5.5rem; /* 55px */
+    font-size: 5.5rem; 
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 2rem;
 }
 
 .home-content p {
-    font-size: 1.7rem; /* 17px - slightly reduced */
+    font-size: 1.7rem; 
     line-height: 1.6;
     margin-bottom: 3rem;
 }
@@ -187,15 +181,14 @@ span {
     }
 }
 
-/* Social Icons */
 .social-icons {
     text-align: left;
     margin-top: 2rem;
 }
 
 .social-icons a {
-    font-size: 2rem; /* 20px */
-    width: 4.2rem; /* Slightly smaller icon circles */
+    font-size: 2rem; 
+    width: 4.2rem; 
     height: 4.2rem;
     margin-right: 1.5rem;
     display: inline-flex;
@@ -215,10 +208,9 @@ span {
     box-shadow: 0 0 25px #b74b4b;
 }
 
-/* Call to Action Button */
 .btn {
-    font-size: 1.6rem; /* 16px */
-    padding: 1rem 2.8rem; /* Slightly reduced padding */
+    font-size: 1.6rem; 
+    padding: 1rem 2.8rem;
     margin-top: 3rem;
     display: inline-block;
     background-color: black;
@@ -238,12 +230,11 @@ span {
     box-shadow: 0 0 25px #b74b4b;
 }
 
-/* Section Title Styling */
 .title h1 {
-    font-size: 5rem; /* 50px */
-    margin-bottom: 4rem; /* Reduced margin */
+    font-size: 5rem; 
+    margin-bottom: 4rem; 
     position: relative;
-    display: inline-block; /* Keeps the title itself centered via section's align-items */
+    display: inline-block; 
 }
 
 .title h1::after {
@@ -258,34 +249,30 @@ span {
     border-radius: 2px;
 }
 
-/* About Section */
 .about p {
-    font-size: 1.7rem; /* 17px */
+    font-size: 1.7rem; 
     line-height: 1.7;
     max-width: 800px;
-    text-align: left; /* Aligns About Me paragraph text to the left */
+    text-align: left; 
 }
 
-/* Technologies & Skills Sections - Shared Layout */
 .skills-details,
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Keeps boxes centered as a group */
+    justify-content: center; 
     gap: 2.5rem;
     width: 100%;
     max-width: 1200px;
 }
 
 .box {
-    padding: 2.8rem 2.2rem; /* Slightly reduced padding */
-    font-size: 1.5rem; /* Base font for box text */
+    padding: 2.8rem 2.2rem; 
+    font-size: 1.5rem; 
     background-color: #1a1a1a;
     border-radius: 1.5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    flex: 1 1 270px; /* Adjusted flex basis */
-    /* text-align: center; -- Keeping this here for now, as topic/per are often centered in boxes.
-                            If you want paragraph *inside* the box left, apply it to .box p */
+    flex: 1 1 270px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 200px;
     display: flex;
@@ -300,40 +287,38 @@ span {
 }
 
 .box .topic {
-    font-size: 2.2rem; /* 22px */
+    font-size: 2.2rem; 
     font-weight: 600;
     color: #b74b4b;
-    margin-bottom: 1.2rem; /* Reduced margin */
+    margin-bottom: 1.2rem; 
 }
 
 .box .per {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.8rem; 
     font-weight: 500;
     color: white;
 }
 
 .box .icon {
-    font-size: 4.5rem; /* 45px */
+    font-size: 4.5rem; 
     color: #b74b4b;
     margin-bottom: 1.2rem;
 }
 
 .box p {
-    font-size: 1.4rem; /* 14px for box paragraphs */
+    font-size: 1.4rem; 
     line-height: 1.7;
     color: #ccc;
-    text-align: left; /* Aligns paragraph text inside skill boxes to the left */
+    text-align: left; 
 }
 
-/* Projects Section Styling */
 .projects p {
-    font-size: 1.7rem; /* 17px */
+    font-size: 1.7rem; 
     max-width: 800px;
-    text-align: left; /* Aligns Project description text to the left */
+    text-align: left; 
 }
 
 
-/* --- Media Queries for General Layout --- */
 @media (max-width: 1000px) {
     .home {
         gap: 4rem;
@@ -347,15 +332,15 @@ span {
     }
 
     .home-content {
-        text-align: left; /* Keep left alignment for mobile home content */
+        text-align: left; 
     }
 
     .home-content h1 {
-        font-size: 4rem; /* 40px */
+        font-size: 4rem;
     }
 
     .home-content p {
-        font-size: 1.5rem; /* 15px */
+        font-size: 1.5rem;
     }
 
     .home-img {
@@ -368,7 +353,7 @@ span {
     }
 
     .social-icons {
-        text-align: center; /* Social icons usually look good centered on mobile */
+        text-align: center; 
     }
 
     .btn {
@@ -381,13 +366,13 @@ span {
     }
 
     .title h1 {
-        font-size: 3.5rem; /* 35px */
+        font-size: 3.5rem; 
         margin-bottom: 3rem;
     }
 
     .about p {
-        font-size: 1.5rem; /* 15px */
-        text-align: left; /* Ensure it's left on mobile too */
+        font-size: 1.5rem; 
+        text-align: left; 
     }
 
     .box {
@@ -396,19 +381,18 @@ span {
     }
 
     .box p {
-        text-align: left; /* Ensure it's left on mobile too */
+        text-align: left; 
     }
 
     .projects p {
-        text-align: left; /* Ensure it's left on mobile too */
+        text-align: left; 
     }
 }
 
-/* Footer Styling */
 footer {
-    text-align: center; /* Footer text usually stays centered */
+    text-align: center; 
     padding: 2.5rem;
-    font-size: 1.4rem; /* 14px */
+    font-size: 1.4rem; 
     color: #ccc;
     background-color: #161616;
     margin-top: 5rem;
